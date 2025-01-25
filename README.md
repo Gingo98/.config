@@ -673,8 +673,7 @@ sudo pacman -S lazygit
 sudo pacman -S fzf
 sudo pacman -S ripgrep
 sudo pacman -S pandoc
-sudo pacman -S pandoc-citeproc
-sudo pacman -S node
+sudo pacman -S nodejs
 sudo pacman -S npm
 sudo pacman stylua
 sudo pacman lua-language-server
