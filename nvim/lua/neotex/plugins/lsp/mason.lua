@@ -1,6 +1,6 @@
 return {
   "williamboman/mason.nvim",
-  ft ={ "py", "html", "js", "ts", "lua" },
+  ft ={ "py", "html", "js", "ts", "lua", "hpp", "cpp"},
   dependencies = {
     "williamboman/mason-lspconfig.nvim",
     "WhoIsSethDaniel/mason-tool-installer.nvim",
@@ -33,6 +33,7 @@ return {
         -- "html",
         -- "emmet_ls",
         "pyright",
+        "clangd",
         -- "tsserver",
         -- "lua_ls",   -- seems to cause trouble
         -- "cssls",

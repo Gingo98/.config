@@ -11,8 +11,8 @@ function _G.set_terminal_keymaps()
   vim.wo.winfixbuf = true
   -- NOTE: use vim.api.nvim_buf_set_keymap to keep these mappings local to a buffer
   vim.api.nvim_buf_set_keymap(0, "t", "<esc>", "<C-c>", {})
-  vim.api.nvim_buf_set_keymap(0, "t", "<C-a>", "<Cmd>AvanteAsk<CR>", {})
-  vim.api.nvim_buf_set_keymap(0, "t", "<C-c>", "<Cmd>AvanteChat<CR>", {})
+--  vim.api.nvim_buf_set_keymap(0, "t", "<C-a>", "<Cmd>AvanteAsk<CR>", {})
+--  vim.api.nvim_buf_set_keymap(0, "t", "<C-c>", "<Cmd>AvanteChat<CR>", {})
   vim.api.nvim_buf_set_keymap(0, "t", "<C-h>", "<Cmd>wincmd h<CR>", {})
   vim.api.nvim_buf_set_keymap(0, "t", "<C-j>", "<Cmd>wincmd j<CR>", {})
   vim.api.nvim_buf_set_keymap(0, "t", "<C-k>", "<Cmd>wincmd k<CR>", {})

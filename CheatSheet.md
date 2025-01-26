@@ -46,10 +46,10 @@ Accordingly, I will focus attention on the mappings included in `~/.config/nvim/
 - **Display Line Movements**: in either normal or visual mode, `shift+j` and `shift+k` will vertically navigate displayed lines as opposed to numbered lines, whereas `shift+h` and `shift+l` will move to the beginning or end of the displayed line, respectively.
 
 ## _Windows, Buffers, and Panes_ 
-
-- **Manage Windows**: use `<ctrl+space>c` to create a new window, and `<ctrl+space>k` to kill the current window (make sure that all processes have been ended, for instance by closing NeoVim with `<space>q`).
-- **Switch Windows**: use `<ctrl+space>n` and `<ctrl+space>p` to cycle through open windows.
-- **Switch Buffers**: use `<bs>` and `<shift+tab>` to cycle though the open buffers.
+TODO: Why does this not work at all?
+    - **Manage Windows**: use `<ctrl+space>c` to create a new window, and `<ctrl+space>k` to kill the current window (make sure that all processes have been ended, for instance by closing NeoVim with `<space>q`).
+    - **Switch Windows**: use `<ctrl+space>n` and `<ctrl+space>p` to cycle through open windows.
+- **Switch Buffers**: use `<bs` nd `<shift+tab>` to cycle though the open buffers.
 - **Navigate Panes**: use `<ctrl>h/j/k/l` to switch focus between buffers.
 - **Resize Panes**: use `<alt>h/l` to horizontally resize the buffer in focus.
 
@@ -58,7 +58,7 @@ Accordingly, I will focus attention on the mappings included in `~/.config/nvim/
 - **Save and Quit**: use `<space>w` to save buffer, and `<space>q` to save and quite all buffers.
 - **Copy**: use `Y` to yank to end of line.
 - **Previous Word**: use `E` to go to the end of the previous word.
-- **Comment**: in normal mode or visual mode, use `ctrl+\ ` to toggle whether the lines in question are commented out.
+TODO: does not work! - **Comment**: in normal mode or visual mode, use `ctrl+\ ` to toggle whether the lines in question are commented out.
 - **Help**: use `shift+m` to open Help for the word under the cursor, and `q` to close.
 - **Terminal**: use `ctrl+t` to toggle the terminal window in NeoVim.
 - **Bib Export**: use `<space>ab` to generate local bibliography from all citations present in the document.

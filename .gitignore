@@ -56,3 +56,5 @@ Vial/Vial.conf
 qmk/qmk.ini
 via-nativia
 fish/conf.d/private.fish
+chromium-flags.conf
+kwalletmanagerrc

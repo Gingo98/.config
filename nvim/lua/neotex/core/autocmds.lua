@@ -15,17 +15,17 @@ api.nvim_create_autocmd(
 )
 
 -- Handle Avante help markdown file specifically
-api.nvim_create_autocmd(
-  "BufEnter",
-  {
-    pattern = "*/avante.nvim.md",
-    callback = function(ev)
-      vim.bo[ev.buf].filetype = "help"  -- Set filetype to help
-      vim.wo.winfixbuf = true  -- Set as fixed buffer
-      vim.keymap.set("n", "q", ":close<CR>", { buffer = ev.buf, silent = true })
-    end,
-  }
-)
+--api.nvim_create_autocmd(
+--  "BufEnter",
+--  {
+--    pattern = "*/avante.nvim.md",
+--    callback = function(ev)
+--      vim.bo[ev.buf].filetype = "help"  -- Set filetype to help
+--      vim.wo.winfixbuf = true  -- Set as fixed buffer
+--      vim.keymap.set("n", "q", ":close<CR>", { buffer = ev.buf, silent = true })
+--    end,
+--  }
+--)
 
 vim.api.nvim_create_autocmd({ "TermOpen" }, {
   pattern = { "term://*" }, -- use term://*toggleterm#* for only ToggleTerm

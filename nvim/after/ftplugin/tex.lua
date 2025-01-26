@@ -9,14 +9,9 @@ require("nvim-surround").buffer_setup({
     --   end,
     -- },
     ["Q"] = {
-      add = { "``", "''" },
-      find = "%b``.-''",
-      delete = "^(``)().-('')()$",
-    },
-    ["q"] = {
-      add = { "`", "'" },
-      find = "`.-'",
-      delete = "^(`)().-(')()$",
+      add = { "\\glqq", "\\grqq{}" },
+      find = "%b\\glqq.-\\grqq{}",
+      delete = "^(\\glqq)().-(\\grqq)()$",
     },
     ["b"] = {
       add = { "\\textbf{", "}" },
@@ -45,6 +40,11 @@ require("nvim-surround").buffer_setup({
       find = "\\textsc%b{}",
       delete = "^(\\textsc{)().-(})()$",
     },
+    ["e"] = {
+      add = { "\\emph{", "}" },
+      find = "\\emph%b{}",
+      delete = "^(\\emph{)().-(})()$",
+    },
     ["t"] = {
       add = { "\\texttt{", "}" },
       -- add = function()
@@ -57,7 +57,7 @@ require("nvim-surround").buffer_setup({
       delete = "^(\\%a-tt{)().-(})()$",
     },
     ["$"] = {
-      add = { "$", "$" },
+      add = { "\\(", "\\)" },
       -- find = "%b$.-$",
       -- delete = "^($)().-($)()$",
     },

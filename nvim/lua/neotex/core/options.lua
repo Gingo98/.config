@@ -1,8 +1,8 @@
 local options = {
 
   -- GENERAL
-  timeoutlen = 100,               -- time to wait for a mapped sequence to complete (in milliseconds)
-  updatetime = 200,               -- faster completion (4000ms default)
+  timeoutlen = 250,               -- time to wait for a mapped sequence to complete (in milliseconds)
+  updatetime = 100,               -- faster completion (4000ms default)
   swapfile = false,               -- creates a swapfile
   undofile = true,                -- enable persistent undo
   writebackup = false,            -- if a file is being edited by another program, it is not allowed to be edited
@@ -18,7 +18,7 @@ local options = {
   relativenumber = true,          -- set relative numbered lines
   numberwidth = 2,                -- set number column width to 2 {default 4}
   signcolumn = "yes",             -- always show the sign column, otherwise it would shift the text each time
-  fillchars = "eob: ",            -- don't show tildes
+  --fillchars = "eob: ",            -- don't show tildes
   cursorline = true,              -- highlight the current line
   -- colorcolumn = "100",             -- highlight vertical colorcolumn (moved to after/python.lua)
   wrap = true,                    -- display lines as one long line
@@ -28,8 +28,8 @@ local options = {
   showmode = false,               -- we don't need to see things like -- INSERT -- anymore
   splitbelow = true,              -- force all horizontal splits to go below current window
   splitright = true,              -- force all vertical splits to go to the right of current window
-  scrolloff = 7,                  -- minimal number of screen lines to keep above and below the cursor
-  sidescrolloff = 7,              -- minimal number of screen columns either side of cursor if wrap is `false`
+  scrolloff = 10,                  -- minimal number of screen lines to keep above and below the cursor
+  sidescrolloff = 10,              -- minimal number of screen columns either side of cursor if wrap is `false`
   shortmess = "filnxtToOFc",      -- which errors to suppress
   mousemoveevent = true,
 
@@ -44,7 +44,8 @@ local options = {
 
   -- EDIT
   spell = true,                   -- turns on spellchecker
-  spelllang = { 'en_us' },        -- sets spelling dictionary
+  spelllang = {'en_us', 'de_20'},        -- sets spelling dictionary
+  spellsuggest = "best",          -- fastens the preview for spelling advice z=
   clipboard = "unnamedplus",      -- allows neovim to access the system clipboard
   mouse = "a",                    -- allow the mouse to be used in neovim
   mousescroll = "ver:2,hor:4",    -- change the speed of the scroll wheel
@@ -53,7 +54,6 @@ local options = {
   virtualedit = "block",          -- vitualblock mode doesn't get stuck at the end of line
   inccommand = "split",           -- shows all inline replacements in split
   autoread = true,
-
 }
 
 -- turns on all values in options table above
